@@ -19,6 +19,9 @@ window.onload = function()
     toLeft.forEach(function(event) {
         event.classList.add('active')
     })
+
+
+    
 };
 
 window.addEventListener('scroll', function() {

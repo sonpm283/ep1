@@ -85,15 +85,32 @@ button:active {
     font-weight: 700;
     padding: 1.2rem 1.8rem;
     background: transparent;
+
+    transition: all .3s ease-in-out;
+}
+.btn:hover {
+   color: var(--light-black-color);
 }
 
 .btn-primary {
     color: var(--white-color);
     background: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+.btn-primary:hover {
+    color: var(--main-color);
+    background: var(--white-color);
+
+    transition: all .3s ease-in-out;
 }
 
 .btn-rounded {
     border: 1px solid var(--main-color);
+}
+.btn-rounded:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    transition: all .3s ease-in-out;
 }
 
 .text-center {

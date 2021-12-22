@@ -22,14 +22,19 @@ window.onload = function()
 };
 
 window.addEventListener('scroll', function() {
+    const gallery = document.querySelector('.gallery-list')
+    const galleryPos = gallery.getBoundingClientRect().top
     const content = document.querySelector('.service')
     const contentPosition = content.getBoundingClientRect().top
     const screenPosition = window.innerHeight/1.7
-    console.log(contentPosition)
-    console.log(screenPosition)
     const homeSectionImg = document.querySelectorAll('.home-section-img')
     const homeSectionContent = document.querySelectorAll('.home-section-content')
-
+   
+    if(galleryPos < screenPosition) {
+        gallery.classList.add('active')
+    }else {
+        gallery.classList.remove('active')
+    }
     homeSectionContent.forEach(function(e) {
         let homeSectionContentPos = e.getBoundingClientRect().top
         if(homeSectionContentPos < screenPosition) {

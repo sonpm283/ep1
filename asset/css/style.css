@@ -262,6 +262,14 @@ main {
 }
 .gallery-list {
     margin-left: -3rem;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all .8s ease-in-out;
+}
+
+.gallery-list.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 .gallery-item {
     width: calc(25% - 3rem);

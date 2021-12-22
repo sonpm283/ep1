@@ -1,0 +1,112 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #3C64B1;
+    --white-color: #ffffff;
+    --light-black-color: #373F41;
+    --text-color: #737B7D;
+    --mulish-font: 'Mulish', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--mulish-font);
+    color: var(--light-black-color);
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    background: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+button:focus,
+button:active {
+    border: none;
+    outline: none;
+}
+
+.wrapper{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container  {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.j-sb {
+    justify-content: space-between;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+.a-c {
+    align-items: center;
+}
+
+.btn {
+    font-size: 1.4rem;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    padding: 1.2rem 1.8rem;
+    background: transparent;
+}
+
+.btn-primary {
+    color: var(--white-color);
+    background: var(--main-color);
+}
+
+.btn-rounded {
+    border: 1px solid var(--main-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.page-heading h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.page-heading p {
+    color: var(--text-color);
+    line-height: 2.2rem;
+}

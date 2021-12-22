@@ -1,0 +1,259 @@
+/* =============== Header ============ */
+
+.header {
+    padding: 2.5rem 0;
+    background: rgba(60, 100, 177, 0.06);
+}
+
+.menu-bars {
+    display: none;
+}
+
+.menu-bars i {
+    color: var(--main-color);
+    font-size: 5rem;
+}
+
+.logo {
+    height: 4.3rem;
+}
+
+.menu li ~ li {
+    margin-left: 3.2rem;
+}
+
+.menu li a {
+    color: var(--light-black-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.menu-mb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu-mb.active {
+    opacity: 1;
+    visibility: visible;
+}
+.menu-mb.active .menu-mb-list {
+    transform: translateX(0);
+}
+.menu-mb-list {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    height: 100vh;
+    padding: 15px;
+    width: 280px;
+    transform: translateX(100%);
+    z-index: 99;
+    transition: all 0.25s ease-in-out;
+}
+.menu-mb-ovlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 98;
+    transition: 0.3s ease;
+}
+.menu-mb-list li a {
+    text-transform: uppercase;
+    padding: 0 10px;
+    line-height: 50px;
+    display: block;
+    font-weight: 700;
+    color: var(--main-color);
+}
+/* ============== Banner =============== */
+
+.banner {
+    background: url(../images/bg.png) no-repeat center/cover rgba(60, 100, 177, 0.08);
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    max-width: 730px;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 4.4rem;
+    line-height: 5.6rem;
+}
+
+.banner-txt {
+    margin: 3.2rem 0 5.6rem 0;
+    color: var(--text-color);
+    line-height: 22px; 
+}
+
+.banner-btn a:last-child {
+    display: inline-block;
+    margin-left: 2.4rem;
+}
+
+/* =============== Section 1 ================= */
+.section-1 {
+    padding-top: 6rem;
+}
+
+.section-1 .page-heading p {
+    margin: 2.4rem 0 3.5rem 0;
+}
+
+.service-item {
+    margin-left: 3rem;
+    width: calc(33.33% - 3rem);
+}
+main {
+    background-color: var(--white-color);
+}
+
+.service {
+    margin-left: -3rem;
+}
+
+.service-icon {
+    height: 40px;
+}
+
+.service-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    margin: 2.4rem 0 1.2rem 0;
+}
+
+.service-info {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.service-btn {
+    color: var(--main-color);
+    line-height: 1.8rem;
+    margin-top: 2.2rem;
+}
+
+/* =============== Section 2 ============== */
+
+.home-section {
+    padding-top: 9.4rem;
+}
+
+.home-section-inner {
+    margin-left: -3rem;
+}
+
+.home-section-item {
+    margin-left: 3rem;
+    width: calc(50% - 3rem);
+}
+
+.home-section-img img {
+    width: 100%;
+}
+
+.home-section-content p {
+    margin-top: 3.2rem;
+}
+
+.home-section-form {
+    margin-top: 5.6rem;
+}
+
+.home-section-form input {
+    width: 377px;
+    border: none;
+    outline: none;
+    background-color: #F4F5F4;
+    padding: 1.1rem 1.6rem;
+    margin-right: 2.4rem;
+    font-family: var(--mulish-font);
+}
+
+.home-section-form input::placeholder {
+    font-family: var(--mulish-font);
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.form-btn {
+    cursor: pointer;
+}
+
+.home-section-content small {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    line-height: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+.home-section-footer {
+    margin-top: 5.6rem;
+    margin-left: -3rem;
+}
+
+.home-section-box {
+    width: calc(50% - 3rem);
+    margin-left: 3rem;
+}
+
+.home-section-icon {
+    height: 32px;
+}
+
+.home-section-box p {
+    margin-top: 1.6rem;
+    color: var(--text-color);
+    line-height: 2.2rem;
+}
+
+
+/* ================ Gallery =================== */
+.gallery {
+    padding: 8.6rem 0 9.5rem 0;
+}
+.gallery-list {
+    margin-left: -3rem;
+}
+.gallery-item {
+    width: calc(25% - 3rem);
+    margin-left: 3rem;
+}
+.gallery-title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1.2rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    width: 100%;
+}
+
+.gallery-info {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 2rem;
+}

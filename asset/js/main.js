@@ -25,9 +25,32 @@ window.addEventListener('scroll', function() {
     const content = document.querySelector('.service')
     const contentPosition = content.getBoundingClientRect().top
     const screenPosition = window.innerHeight/1.7
+    console.log(contentPosition)
+    console.log(screenPosition)
+    const homeSectionImg = document.querySelectorAll('.home-section-img')
+    const homeSectionContent = document.querySelectorAll('.home-section-content')
+
+    homeSectionContent.forEach(function(e) {
+        let homeSectionContentPos = e.getBoundingClientRect().top
+        if(homeSectionContentPos < screenPosition) {
+            e.classList.add('active')
+        }else {
+            e.classList.remove('active')
+        }
+    })
+    homeSectionImg.forEach(function(e) {
+        let homeSectionImgPos = e.getBoundingClientRect().top
+        if(homeSectionImgPos < screenPosition) {
+            e.classList.add('active')
+        }else {
+            e.classList.remove('active')
+        }
+    })
+
     if(contentPosition < screenPosition) {
         content.classList.add('active')
     }else {
         content.classList.remove('active')
     }
 })
+

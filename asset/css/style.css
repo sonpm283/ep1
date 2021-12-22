@@ -119,13 +119,13 @@
 .service {
     margin-left: -3rem;
     opacity: 0;
-    transform: scale(0.1);
-    transition: all 1s ease-in-out;
+    transform: translateY(50px);
+    transition: all .5s ease-in-out;
 }
 
 .service.active {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
 }
 
 .service-item {
@@ -173,8 +173,30 @@ main {
     width: calc(50% - 3rem);
 }
 
+.home-section-img {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all .8s ease-in-out;
+}
+
+.home-section-img.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .home-section-img img {
     width: 100%;
+}
+
+.home-section-content {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all .8s ease-in-out;
+}
+
+.home-section-content.active {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .home-section-content p {

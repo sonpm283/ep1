@@ -94,3 +94,9 @@
 
 }
 
+@media screen and (min-width: 426px) {
+   .menu-mb {
+       display: none;
+   }
+}
+

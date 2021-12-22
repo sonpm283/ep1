@@ -110,3 +110,43 @@ button:active {
     color: var(--text-color);
     line-height: 2.2rem;
 }
+
+.top-down {
+    transform: translateY(-50px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.to-left {
+    transform: translateX(-50px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.to-left.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.top-down.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.delay-4 {
+    transition-delay: .5s;
+}
+
+.delay-6 {
+    transition-delay: .8s;
+}
+
+.delay-8 {
+    transition-delay: 1.5s;
+}
+

@@ -116,16 +116,24 @@
     margin: 2.4rem 0 3.5rem 0;
 }
 
+.service {
+    margin-left: -3rem;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+
+.service.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
 .service-item {
     margin-left: 3rem;
     width: calc(33.33% - 3rem);
 }
 main {
     background-color: var(--white-color);
-}
-
-.service {
-    margin-left: -3rem;
 }
 
 .service-icon {

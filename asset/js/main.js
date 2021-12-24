@@ -18,10 +18,7 @@ window.onload = function()
     })
     toLeft.forEach(function(event) {
         event.classList.add('active')
-    })
-
-
-    
+    }) 
 };
 
 window.addEventListener('scroll', function() {
@@ -57,8 +54,6 @@ window.addEventListener('scroll', function() {
 
     if(contentPosition < screenPosition) {
         content.classList.add('active')
-    }else {
-        content.classList.remove('active')
     }
 })
 

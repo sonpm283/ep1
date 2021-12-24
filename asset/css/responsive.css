@@ -45,10 +45,10 @@
 }
 @media screen and (max-width: 767px) {
     .service {
-        justify-content: center;
+        justify-content: space-between;
     }
     .service-item  {
-        width: calc(50% - 3rem);
+        width: calc(50% - (3rem/2));
         margin-bottom: 3rem;
     }
 }

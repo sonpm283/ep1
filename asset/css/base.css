@@ -27,6 +27,10 @@ body {
     background: #E5E5E5;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
